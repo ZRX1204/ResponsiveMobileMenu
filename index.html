@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .container {
+        @apply max-w-[90%] mx-auto;
+        }
+
+        .btn {
+        @apply bg-[#5E8B7E] text-white px-5 py-3 text-center;
+        }  
+
+        .side-bar {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        padding: 9rem;
+        background-color: #5A5A5A;
+        color: #fff;
+        }
+
+        .side-bar.active {
+        display: block;
+        }
+
+        .content-gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 42px;
+        margin-bottom: 40px;
+        }
+
+        .btn.rounded {
+        @apply rounded-full;
+        }
+
+        .home::before {
+        /* content: url("./assets/scratch.svg");
+        position: absolute;
+        bottom: -18px; */
+        }
+
+        .active {
+        @apply block;
+        }
+    }
+    </style>
+    <title>Hight School</title>
+</head>
+
+<body>
+    <header class="container absolute inset-x-0 z-50 text-[white] container">
+        <nav class="flex py-5 items-center justify-between">
+            <a href="">
+                <img src="./assets/Project logo.svg" alt="">
+                <a href=""> Hight School</a>
+            </a>
+            <div class="md:max-xl d-flex space-x-9 flex-1 ml-12 justify-between">
+                <a href="">Home</a>
+                <a href="">Profile Sekolah</a>
+                <a href="">Data Akademik</a>
+                <a href="">Artikel</a>
+                <a href="">Fasilitas</a>
+                <a href="">Gallery</a>
+                <a href="">E-Learning</a>
+                <div class="inline-block">
+                    <a href="" class="btn rounded static">Hubungi Kami</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pt-60 pb-44 flex flex-col items-center lg:flex-row bg-[url('/assets/Book.png')]">
+        <div class="container space-y-7 flex-1">
+            <h1 class="text-5xl w-3/4 font-bold leading-none relative text-[white]">
+                Buku - Buku yang dapat membuat anda Termotivasi
+            </h1>
+            <p class=" text-gray-200">September 6, 2022</p>
+            <p class=" text-gray-200 w-2/5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam.
+            </p>
+            <a href="" class="btn inline-block btn rounded">Read more</a>
+        </div>
+        <div class="background">
+            <!-- <img src="/assets/Book.png" alt=""> -->
+        </div>
+    </section>
+
+    <section class="py-28">
+        <div class="container flex-col space-y-5 lg:space-y-0 lg:space-x-10 lg:flex-row flex ">
+            <div class="border-2 border-white flex flex-1 flex-col items-center justify-between px-3 ">
+                <img class="py-2" src="./assets/Sekolah.svg" alt="">
+                <div class="text-black space-y-1">
+                    <h3 class="font-bold text-base text-center">Identitas Sekolah</h3>
+                    <p class="text-sm text-gray-500 text-center">Hight School berdiri sejak tahun 1980 dengan nama Hight
+                        School 1.
+                        Sekolah yang
+                        akan membimbing muridnya hingga benar</p>
+                </div>
+                <a href="" class="font-bold text-sm text-[#5E8B7E] pt-2">Read more</a>
+            </div>
+
+            <div class="border-2 border-white flex flex-1 flex-col items-center justify-center px-3">
+                <img class="py-2" src="./assets/Toga.svg" alt="">
+                <div class="text-black space-y-1">
+                    <h3 class="font-bold text-base text-center">Visi Misi</h3>
+                    <p class="text-sm text-gray-500 text-center">Hight School berdiri sejak tahun 1980 dengan nama Hight
+                        School 1.
+                        Sekolah yang
+                        akan
+                        membimbing muridnya hingga benar</p>
+                </div>
+                <a href="" class="font-bold text-sm text-[#5E8B7E] pt-2">Read more</a>
+            </div>
+
+            <div class="border-2 border-white flex flex-1 flex-col items-center justify-center px-3 ">
+                <img class="py-2" src="./assets/Struktur.svg" alt="">
+                <div class="text-black space-y-1">
+                    <h3 class="font-bold text-base text-center">Struktur Sekolah</h3>
+                    <p class="text-sm text-gray-500 text-center">Hight School berdiri sejak tahun 1980 dengan nama Hight
+                        School 1.
+                        Sekolah yang
+                        akan
+                        membimbing muridnya hingga benar</p>
+                </div>
+                <a href="" class="font-bold text-sm text-[#5E8B7E] pt-2">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class=" flex flex-col space-y-5 lg:flex-row lg:space-x-10 lg:space-y-0 items-center bg-[#F7FBFA]">
+        <img src="./assets/Wisuda.png" class="w-full flex-1" alt="">
+        <div class="flex-1 space-y-6 py-10 w-4/5">
+            <p class="text-green-800">Pembukaan Kepala Sekolah</p>
+            <h2 class="text-4xl font-bold">Ucapan Kepala Sekolah HIGHT SCHOOL</h2>
+            <p class="text-gray-500">
+                “ Lörem ipsum mikrolös dongen infodemi. Terapument anteliga deforen laskapet målagisk. Av euror.
+                Karriärcoach pyjuskap andropatologi. “
+            </p>
+            <section class="flex">
+                <img src="/assets/Kepala Sekolah.svg" alt="" class="px-2">
+                <section class="d-flex">
+                    <p class="font-bold" style="margin-bottom: 8px;">Bpk. Robert Stent</p>
+                    <p style="margin: 0;">Kepala Sekolah</p>
+                </section>
+            </section>
+        </div>
+    </section>
+
+    <div class="container pt-20">
+        <div class="d-flex justify-between w-full">
+            <h3 class="text-4xl font-semibold py-3">Jurusan (Program Study)</h3>
+            <section class="flex justify-between items-center">
+                <p class="w-1/2">Terdapat Beberapa Jurusan atau Program Study
+                    di SMA PGRI
+                    CICURUG
+                    yang dapat dipilih
+                    sesuai
+                    dengan minat Siswa</p>
+                <div class="justify-items-end">
+                    <a href="" class="btn rounded">Academic Data</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="flex flex-col space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row pt-10 pb-5">
+            <div class="container rounded-2xl border flex flex-1 flex-col items-center justify-between">
+                <img src="./assets/Book.svg" class="pt-10 pb-5" alt="">
+                <div class="w-4/5">
+                    <h3 class="font-bold text-3xl text-center">IPS</h3>
+                    <p class="text-md text-gray-500 text-center py-10">
+                        Jurusan IPS mempelajari tentang hubungan antar
+                        manusia
+                        dan hubungan
+                        manusia dengan lingkungannya, serta berbagai aspek sosial</p>
+                </div>
+            </div>
+            <div class="container rounded-2xl border flex flex-1 flex-col items-center justify-between">
+                <img src="./assets/Atom.svg" class="pt-10 pb-5" alt="">
+                <div class="w-4/5">
+                    <h3 class="font-bold text-3xl text-center">IPA</h3>
+                    <p class="text-md text-gray-500 text-center py-10">
+                        Selain belajar Ilmu Alam, anak SMA belajar matematika juga. Oleh sebab itu selain disebut dengan
+                        jurusan IPA (Ilmu Pengetahuan Alam) jurusan ini punya dua nama lain lagi, yaitu: MIPA , MIA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-20">
+        <div class="d-flex justify-between items-center w-full">
+            <h3 class="text-4xl font-semibold py-3">Prestasi Siswa-Siswi</h3>
+            <section class="flex justify-between items-center">
+                <p class="desc text-sm text-gray-500" style="width: 40%;">Prestasi dari Siswa - Siswi SMA PGRI CICURUG
+                </p>
+                <a href="" class="btn rounded">See all prestation</a>
+            </section>
+        </div>
+
+        <div class="justify-between flex pt-10 spcae-y-5 lg:space-y-0 space-x-5 ">
+            <div class="relative">
+                <img src="./assets/Soccer.png" class="static h-full w-full" alt="">
+                <div class="mt-3 space-y-2">
+                    <div class="">
+                        <p class="absolute bottom-3 left-3 text-xl text-[white]">Juara 2 Lomba Bola</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="./assets/Swimming.png" class="static h-full w-full" alt="">
+                <div class="mt-3 space-y-2">
+                    <div class="flex justify-between">
+                        <p class="absolute bottom-3 left-3 text-xl text-[white]">Juara 1 Lomba Renang</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="./assets/Table Tennis.png" class="static h-full w-full" alt="">
+                <div class="mt-3 space-y-2">
+                    <div class="flex justify-between">
+                        <p class="absolute bottom-3 left-3 text-xl text-[white]">Juara 3 Lomba Tenis Meja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container flex flex-col justify-center items-center">
+        <h2 class="font-bold mb-4">Artikel</h2>
+        <p class="text-slate-500 text-center w-1/2 mb-10">Kami menyediakan beberapa artikel dari kegiatan-kegiatan
+            pembelajaran maupun lorem ipsum donot saas</p>
+        <section class="flex flex sm:flex-col xl:flex-row justify-between items-center">
+            <section>
+                <img src="/assets/Berita 1.png" alt="">
+            </section>
+            <section class="flex sm:mt-10 xl:mt-0 flex-col justify-between gap-6 xl:w-1/2">
+                <section class="flex items-start gap-6">
+                    <img src="/assets/Berita 2.png" alt="">
+                    <section>
+                        <p class="text-slate-300 mb-4">September 2, 2022</p>
+                        <h4 class="font-bold mb-4">Belajar dirumah Ketika Covid-19 Menyebar</h4>
+                        <p>Lörem ipsum mikrolös dongen infodemi. Terapument anteliga deforen laskapet målagisk. Av
+                            euror. </p>
+                    </section>
+                </section>
+                <section class="flex items-start gap-6">
+                    <img src="/assets/Berita 3.png" alt="">
+                    <section>
+                        <p class="text-slate-300 mb-4">September 2, 2022</p>
+                        <h4 class="font-bold mb-4">Perpaduan antara musik rock dan keroncong</h4>
+                        <p>Lörem ipsum mikrolös dongen infodemi. Terapument anteliga deforen laskapet målagisk. Av
+                            euror. </p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <div class="container flex flex-col justify-between py-10 items-center">
+        <button class="btn rounded">
+            See more
+        </button>
+    </div>
+
+    <section class="bg-[#F7FBFA] flex flex-col items-center py-10">
+        <h2 class="font-bold pb-5">Gallery</h2>
+        <p class="text-slate-500 mb-10">Lörem ipsum mikrolös dongen infodemi. Terapument anteliga deforen laskapet</p>
+        <section class="content-gallery">
+            <article>
+                <img src="/assets/Gallery 1.png">
+            </article>
+            <article>
+                <img src="/assets/Gallery 2.png">
+            </article>
+            <article>
+                <img src="/assets/Gallery 3.png">
+            </article>
+            <article>
+                <img src="/assets/Gallery 4.png">
+            </article>
+            <article>
+                <img src="/assets/Gallery 5.png">
+            </article>
+        </section>
+        <div class="btn rounded">
+            <button>See more</button>
+        </div>
+    </section>
+
+    <section class="bg-[#0E2123] text-white py-14">
+        <div
+            class="container flex flex-col space-y-5 md:flex-row md:space-y-0 items-center md:items-start md:justify-center space-x-12">
+            <div class="flex flex-col">
+                <div class="flex items-center gap-5 mb-5">
+                    <img src="/assets/Project logo.svg" alt="" width="40">
+                    <p class="font-bold">Hight School</p>
+                </div>
+
+                <p class="max-w-[380px]">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor
+                    auctor,
+                    erat sapien
+                    faucibus lectus, vel tempor dolor augue et lectus.""
+                </p>
+                <ul class="flex gap-5 mt-5">
+                    <li>
+                        <img src="/assets/Facebook.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/Twitter.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/Linkedin.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/Instagram.png" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 gap-y-8">
+                <div>
+                    <p class="font-bold py-2">Jelajah</p>
+                    <ul class="flex flex-col gap-2 space-y-1 mt-3">
+                        <li>Identitas Sekolah</li>
+                        <li>Berita</li>
+                        <li>Gallery</li>
+                        <li>Fasilitas</li>
+                        <li>Kontak Kami</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="font-bold py-2">Data Akademik</p>
+                    <ul class="flex flex-col gap-2 space-y-1 mt-3">
+                        <li>Tentang Pendidik</li>
+                        <li>Tenaga Kependidikan</li>
+                        <li>Daftar Siswa</li>
+                        <li>Absensi Siswa</li>
+                        <li>Organisasi Sekolah</li>
+                        <li>Jadwal Pelajaran</li>
+                        <li>Jadwal Ujian</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="font-bold py-2">Lokasi</p>
+                    <ul class="flex flex-col gap-2 space-y-1 mt-3">
+                        <li>Alamat</li>
+                        <li>3891 Ranchview Dr. Richardson, California 62639</li>
+                        <li>Kontak Kami</li>
+                        <li>
+                            Telp: (0266) 123456
+                            Web : www.higntschool.sch.id
+                            email : info@hightschool.sch.id
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0E2123] py-5">
+        <p class="text-center text-white ">© Hight School. All right Reserved. Website By mangcoding</p>
+    </footer>
+</body>
+
+<script>
+    var btn = document.querySelectorAll('button');
+    btn.forEach((click) => {
+        click.addEventListener('click', () => {
+            alert('Button has clicked!');
+        })
+    })
+</script>
+<script>
+    var btnShow = document.querySelector('#burger-button');
+    var sidebar = document.querySelector('.side-bar');
+    btnShow.addEventListener('click', function () {
+        sidebar.classList.toggle("active");
+    })
+</script>
+<script>
+    const checkScroll = () => {
+        const header = document.querySelector('.header');
+        if (window.innerWidth > 360) {
+            if (window.scrollY > 50) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        }
+    };
+    window.addEventListener('scroll', checkScroll);
+    document.addEventListener('DOMContentLoaded', checkScroll); < script
+</script>
+
+</html>
